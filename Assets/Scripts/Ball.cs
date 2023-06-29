@@ -116,7 +116,7 @@ public class Ball : MonoBehaviour
       
         int point = Score.GetInstance().GetScore();
         Debug.Log("here are tootallee points : " + point);
-        if(point > 9)
+        if(point == 10)
         {
             audioManager.PlayMySound("cheers");
             if (PinRestPos.counter % 2 == 0)
